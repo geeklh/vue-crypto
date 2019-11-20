@@ -25,7 +25,8 @@
     		return {
     			msg : 'This is a clear text' ,
 				encryptMsg : '' ,
-                userInfo : userInfo ,
+                userInfo : "ZrMLMkcZZExlIdlYGsDYBSeZUAviqpBrBPhnaKecudHaL5g68znNQQ==" ,
+                key:"73961011",
 				decryptMsg : ''
 			}
         },
@@ -34,7 +35,7 @@
 				this.encryptMsg = '密文：' + secret.Encrypt(this.msg);
             },
 			decrypt(){
-                this.decryptMsg = '明文：' + secret.Decrypt(this.userInfo);
+                this.decryptMsg = '明文：' + secret.Testen(this.userInfo,this.key);
             }
         }
     }
